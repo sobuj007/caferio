@@ -34,12 +34,17 @@ class _SignUpPageState extends State<SignUpPage> {
       ),
     ),),
 
-    bottomNavigationBar: Container( 
+    bottomNavigationBar: Container(
+      height: 45, 
+      width: MediaQuery.of(context).size.width,
       alignment: Alignment.center,
-      child: Row(children: [
-      Text("Allready have account ! ",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w500),)
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Text("Allready have account ! ",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w500),)
      ,Text("Sing In ",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w800,color: Colors.orange),)
-    ],)),
+    ],),
+      )),
     
     );
   }
